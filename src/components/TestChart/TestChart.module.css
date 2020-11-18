@@ -3,6 +3,7 @@
     justify-content: center;
     width: 85%;
     padding-bottom: 50px;
+    padding-top: 20px;
 }
 
 @media (max-width: 770px) {

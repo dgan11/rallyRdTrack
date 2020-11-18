@@ -8,7 +8,7 @@ import styles from './Card.module.css';
 
 // CountUP docs: https://github.com/glennreyes/react-countup#separator-string
 
-const CardComponent = ({ className, cardTitle, value, cardSubtitle, value2, prefix, suffix, decimals}) => (
+const CardComponent = ({ className, cardTitle, value, cardSubtitle, prefix, suffix, decimals, value2, prefix2, suffix2}) => (
 
     <Grid item xs={12} md={3} component={Card} className={cx(styles.card, className)}>
         <CardContent>
@@ -16,13 +16,16 @@ const CardComponent = ({ className, cardTitle, value, cardSubtitle, value2, pref
                 {cardTitle}
             </Typography>
             <Typography variant="h5" component="h2">
-                <CountUp start={0} end={value} duration={2.75} separator="," prefix={prefix} suffix={suffix} decimals={decimals} />
+                <CountUp start={0} end={value} duration={2.5} separator="," prefix={prefix} suffix={suffix} decimals={decimals} />
             </Typography>
             <Typography variant="body2" component="p">
                 {cardSubtitle}
             </Typography>
+            <Typography variant="body2" component="p">
+                {""}
+            </Typography>
             <Typography variant="body2" color="textSecondary" component="">
-                <CountUp delay={0.5} start={0} align='center' end={5} duration={4} separator="," />
+                <CountUp delay={0.5} start={0} align='center' end={value2} duration={3} separator="," prefix={prefix2} suffix={suffix2} />
             </Typography>
         </CardContent>
     </Grid>

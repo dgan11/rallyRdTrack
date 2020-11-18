@@ -1,10 +1,22 @@
 import React, { useState, useEffect } from 'react'; //import react and the hooks
 import { fetchDailyData } from '../../api'; //import the fetchDailyData function from api/index.js
-import { Line, Bar } from 'react-chartjs-2'; // import line and bar chart
+import { Line} from 'react-chartjs-2'; // import line and bar chart
 
 import styles from './Chart.module.css'
+import axios from "axios";
 
-const Chart = ({ data: { confirmed, deaths, recovered}, country}) => {
+const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
+  
+  // const itemData = [
+  //   {name: "pokemon", ipoPrice={ value:12.50 }, ipoDate="11-01-2020", latestPrice={value:25.00}},
+  //   {name: "wine", ipoPrice=12.50, ipoDate="11-01-2020", latestPrice=25.00},
+  // ]
+
+  const test = [
+    { name: `'06 Ferrari F430`, ticker:"#06FS1"  ,category: "🏎", ipoDate: "11-01-2020", ipoSharePrice: 12.00, ipoValue:199000, curValue:231000 ,latestSharePrice:25.00 },
+    { name: `'06 Ferrari F430`, ticker:"#06FS1"  ,category: "🏎", ipoDate: "11-01-2020", ipoSharePrice: 12.00, ipoValue:199000, curValue:231000 ,latestSharePrice:25.00 },
+    { name: `'06 Ferrari F430`, ticker:"#06FS1"  ,category: "🏎", ipoDate: "11-01-2020", ipoSharePrice: 12.00, ipoValue:199000, curValue:231000 ,latestSharePrice:25.00 },
+  ]
 
   // Create a state, dailyData that is an object
   const [dailyData, setDailyData] = useState([]);
@@ -15,37 +27,11 @@ const Chart = ({ data: { confirmed, deaths, recovered}, country}) => {
     const fetchMyAPI = async () => {
       setDailyData(await fetchDailyData());
     }
-
-    ////console.log("DAILY DATA in CHART.js",dailyData);
-
-    // Call the function to get the daily data and set state dailyData with the full data
     fetchMyAPI();
   }, []); // only happens once
 
-  // --- WE HAVE 2 DIFFERENT CHARTS so seperate ----
-  //1. Line Chart
-  // const lineChart = (
-  //   dailyData.length
-  //     ? (
-  //       <Line
-  //         data={{
-  //           labels: dailyData.map(({ date }) => new Date(date).toLocaleDateString()),
-  //           datasets: [{
-  //             data: dailyData.map(({ confirmed }) => confirmed),
-  //             label: 'Infected',
-  //             borderColor: '#3333FF',
-  //             backgroundColor: 'rgba(0, 0, 255, 0.3)',
-  //             fill: true,
-  //           }, {
-  //             data: dailyData.map(({ deaths }) => deaths),
-  //             label: 'Deaths',
-  //             borderColor: 'rgba(255, 0, 0, 0.8)',
-  //             backgroundColor: 'rgba(255, 0, 0, 0.3)',
-  //             fill: true,
-  //         }]
-  //     }}
-  //   />) : null
-  // );
+  ///console.log("DATA FOR CHARTS: ", dailyData);
+
   const lineChart = (
     dailyData[0] ? (
       <Line
@@ -81,37 +67,9 @@ const Chart = ({ data: { confirmed, deaths, recovered}, country}) => {
   );
 
 
-  ////console.log(confirmed, recovered, deaths);
-
-  //2. Bar Chart
-  const barChart = (
-    confirmed // data.confirmed but destructured
-      ? (
-        <Bar
-          data={{
-            labels: ['Infected', 'Recovered', 'Deaths'],
-            datasets: [{
-              label: 'People',
-              backgroundColor: [
-                'rgba(0,0,255,0.5)',
-                'rgba(0,255,0,0.5)',
-                'rgba(255,0,0,0.5)',
-              ],
-              data:[confirmed.value, recovered.value, deaths.value]
-            }]
-          }}
-          options={{
-            legend: { display: false },
-            title: {display: true, text:`Current state in ${country}`},
-          }}
-        />
-      ) : null
-  )
-
-
   return (
     <div className={styles.container}>
-      {country ? barChart : lineChart }
+      {lineChart}
     </div>
   )
 }

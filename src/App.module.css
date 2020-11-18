@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(241, 241, 231);
 }
 
 .container {
@@ -16,6 +16,13 @@ h1 {
     font-family: 'Merriweather', sans-serif;
 } 
 
+h2 {
+    font-size: 40px;
+    font-style: bold;
+    margin: 30px;
+    font-family: 'Merriweather', sans-serif;
+} 
+
 @media (max-width: 770px) {
     .container {
         margin: 0 10%;
@@ -23,5 +30,9 @@ h1 {
 
     h1 {
         font-size: 33px;
+    }
+
+    h2 {
+        font-size: 25px;
     }
 }
