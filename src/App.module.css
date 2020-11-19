@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(241, 241, 231);
+    /* background-color: rgb(241, 241, 231); */
+    background-color: rgba(250, 250, 250, 0.8);
 }
 
 .container {
@@ -19,9 +20,14 @@ h1 {
 h2 {
     font-size: 40px;
     font-style: bold;
-    margin: 30px;
+    margin: 10px;
     font-family: 'Merriweather', sans-serif;
 } 
+
+p {
+    font-size: 13px;
+    color: rgba(30, 30, 30, 0.7);
+}
 
 @media (max-width: 770px) {
     .container {

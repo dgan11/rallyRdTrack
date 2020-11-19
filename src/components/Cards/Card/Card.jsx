@@ -25,7 +25,12 @@ const CardComponent = ({ className, cardTitle, value, cardSubtitle, prefix, suff
                 {""}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="">
-                <CountUp delay={0.5} start={0} align='center' end={value2} duration={3} separator="," prefix={prefix2} suffix={suffix2} />
+                {value2 ?  
+                    (<CountUp delay={0.5} start={0} align='center' end={value2} duration={3} separator="," prefix={prefix2} suffix={suffix2} />)
+                    :
+                    (suffix2)
+
+                }
             </Typography>
         </CardContent>
     </Grid>

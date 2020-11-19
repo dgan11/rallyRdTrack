@@ -17,13 +17,13 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate }, country }) =
           className={styles.infected}
           cardTitle="Assets"
           value={149}
-          cardSubtitle="Traded and Secured on the Rally platform"
+          cardSubtitle="Traded and Secured on Rally"
           prefix=""
           suffix=""
           decimals={0}
-          value2={8}
-          prefix2="+"
-          suffix2=" IPOs this week"
+          value2=""
+          prefix2=""
+          suffix2="Last IPO: #85JORDAN (Nov 11, 2020)"
         />
         <CardComponent
           className={styles.recovered}
@@ -34,22 +34,22 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate }, country }) =
           prefix="$"
           suffix=""
           decimals={0}
-          value2={300000}
+          value2={54000}
           prefix2="+$"
-          suffix2=" in last window"
+          suffix2=" in last trading window (Nov 17, 2020)"
         />
         <CardComponent
           className={styles.deaths}
           cardTitle="Returns"
-          value={34.5}
+          value={25.75}
           lastUpdate={lastUpdate}
-          cardSubtitle="Average return on investment across owned assets"
+          cardSubtitle="Average ROI on assets with atleast one trading window"
           prefix=""
           suffix="%"
           decimals={1}
-          value2={280}
+          value2={354}
           prefix2="Largest Return on IPO: +"
-          suffix2="%"
+          suffix2="% ('88 Michael Jordan Game Worn Sneakers)"
         />
       </Grid>
     </div>

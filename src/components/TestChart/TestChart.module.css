@@ -4,6 +4,7 @@
     width: 85%;
     padding-bottom: 50px;
     padding-top: 20px;
+    height: 600px;
 }
 
 @media (max-width: 770px) {

@@ -1,14 +1,9 @@
 import React from 'react';
 
-import { Cards, CountryPicker, Chart} from './components';
+import { Cards} from './components';
 import { fetchData } from './api/';
 import styles from './App.module.css';
-
-
-//import EnhancedTable from './components/EnhancedTable/EnhancedTable';
-import EnhancedTable from "./EnhancedTable";
-import EnhancedTable2 from "./components/EnhancedTable/EnhancedTable2"
-import { Box } from '@material-ui/core';
+import EnhancedTable from "./components/EnhancedTable/EnhancedTable";
 import TestChart from "./components/TestChart/TestChart";
 
 class App extends React.Component {
@@ -43,16 +38,13 @@ class App extends React.Component {
         <h1 id="top">Rally Rd Track 🏁</h1>
         <Cards data={data} country={country} />
 
-        <h2 id="compare-assets">Comparison of Asset Classes</h2>
-        <Chart data={data} country={country}/>
+        <h2 id="compare-assets">Year-to-Date Comparison of Asset Classes</h2>
+        {/* <Chart data={data} country={country}/> */}
+        <TestChart />
 
         <h2 id="historic-data">Historic Data</h2>
-        <EnhancedTable2 />
-
-        {/* <div style={{ position: "relative", margin: "auto", width: "80%" }}>
-          <TestChart />
-        </div> */}
-        <TestChart />
+        <EnhancedTable />
+        <p id="tableQualifier">*Only showing offerings with atleast one trading window</p>
 
       </div>
     )

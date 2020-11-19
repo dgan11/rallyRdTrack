@@ -8,13 +8,14 @@
 }
 
 .infected {
-  border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+  /* border-bottom: 10px solid rgba(0, 0, 255, 0.5); */
+  border-bottom: 10px solid rgba(0, 0, 250, 0.5);
 }
 
 .recovered{
-  border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+  border-bottom: 10px solid rgba(0, 250, 0, 0.5);
 }
 
 .deaths{
-  border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+  border-bottom: 10px solid rgba(240, 153, 39, 0.5);
 }

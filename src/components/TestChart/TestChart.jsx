@@ -1,4 +1,3 @@
-import { green, red } from '@material-ui/core/colors';
 import React, { useState, useEffect } from 'react'; //import react and the hooks
 import { Line } from 'react-chartjs-2'; // import line and bar chart
 import styles from './TestChart.module.css';
@@ -62,13 +61,13 @@ const TestChart = ({}) => {
         { i: 0, highPriceUSD: 8.90 }, //Nov
         { i: 1, highPriceUSD: NaN }, //Dec
         { i: 2, highPriceUSD: NaN }, //Jan
-        { i: 3, highPriceUSD: 9.50 }, //Feb
-        { i: 4, highPriceUSD: NaN}, //March
+        { i: 3, highPriceUSD: NaN }, //Feb
+        { i: 4, highPriceUSD: 11}, //March
         { i: 5, highPriceUSD: NaN }, //Apr
-        { i: 6, highPriceUSD: 10.60 }, //May
+        { i: 6, highPriceUSD: NaN }, //May
         { i: 7, highPriceUSD: NaN }, //June
-        { i: 8, highPriceUSD: NaN }, //July
-        { i: 9, highPriceUSD: 11.9 }, //Aug
+        { i: 8, highPriceUSD: 13.50 }, //July
+        { i: 9, highPriceUSD: NaN }, //Aug
         { i: 10, highPriceUSD: NaN }, //Sep
         { i: 11, highPriceUSD: NaN }, // Oct
         { i: 12, highPriceUSD: 13.50 }] //Nov
@@ -78,17 +77,33 @@ const TestChart = ({}) => {
         { i: 0, highPriceUSD: 24 }, //Nov
         { i: 1, highPriceUSD: NaN }, //Dec
         { i: 2, highPriceUSD: NaN }, //Jan
-        { i: 3, highPriceUSD: 30 }, //Feb
+        { i: 3, highPriceUSD: NaN }, //Feb
         { i: 4, highPriceUSD: NaN }, //March
         { i: 5, highPriceUSD: NaN }, //Apr
-        { i: 6, highPriceUSD: 34 }, //May
+        { i: 6, highPriceUSD: NaN }, //May
         { i: 7, highPriceUSD: NaN }, //June
-        { i: 8, highPriceUSD: NaN }, //July
-        { i: 9, highPriceUSD: 38 }, //Aug
+        { i: 8, highPriceUSD: 35 }, //July
+        { i: 9, highPriceUSD: NaN }, //Aug
         { i: 10, highPriceUSD: NaN }, //Sep
         { i: 11, highPriceUSD: NaN }, // Oct
         { i: 12, highPriceUSD: 45 }] //Nov
     const ytdStartingPriceHarryPotter = 24;
+
+    const ytdData88Jordan3 = [
+        { i: 0, highPriceUSD: 11 }, //Nov
+        { i: 1, highPriceUSD: NaN }, //Dec
+        { i: 2, highPriceUSD: NaN }, //Jan
+        { i: 3, highPriceUSD: NaN }, //Feb
+        { i: 4, highPriceUSD: NaN }, //March
+        { i: 5, highPriceUSD: 37 }, //Apr
+        { i: 6, highPriceUSD: NaN }, //May
+        { i: 7, highPriceUSD: NaN }, //June
+        { i: 8, highPriceUSD: NaN }, //July
+        { i: 9, highPriceUSD: NaN }, //Aug
+        { i: 10, highPriceUSD: 49.95 }, //Sep
+        { i: 11, highPriceUSD: NaN }, // Oct
+        { i: 12, highPriceUSD: NaN }] //Nov
+    const ytdStartingPrice88Jordan3 = 11;
 
     const ytdDataZillowUSHousingIndex = [
         { i: 0, highPriceUSD: 245 }, //Nov
@@ -121,7 +136,7 @@ const TestChart = ({}) => {
                         // S&P 500
                         // map to find the ROI% for each month
                         data: ytdDataSPY.map((data) => ((data.highPriceUSD - ytdStartingPriceSPY) / ytdStartingPriceSPY * 100).toFixed(1)),
-                        label: 'S&P 500 ETF (SPDR)',
+                        label: '📊 S&P 500 ETF (SPDR)',
                         borderColor: 'rgba(0, 0, 250, 0.65)',
                         backgroundColor: 'rgba(0, 0, 250, 0.65)',
                         fill: false,
@@ -133,7 +148,7 @@ const TestChart = ({}) => {
                     {
                         // Pokemon 1st Ed Pokemon Set
                         data: ytdDataPokemon.map((data) => ((data.highPriceUSD - ytdStartingPricePokemon) / ytdStartingPricePokemon * 100).toFixed(1)),
-                        label: 'PSA 10 1st Ed. Pokemon Set',
+                        label: '🐱 PSA 10 1st Ed. Pokemon Set',
                         borderColor: 'rgba(0, 250, 0, 0.65)',
                         backgroundColor: 'rgba(0, 250, 0, 0.65)',
                         fill: false,
@@ -146,7 +161,7 @@ const TestChart = ({}) => {
                     {
                         // '18 Rolex GMT MASTER II PEPSI JUBILEE
                         data: ytdDataRolexPepsi.map((data) => ((data.highPriceUSD - ytdStartingPriceRolexPepsi) / ytdStartingPriceRolexPepsi * 100).toFixed(1)),
-                        label: `18 Rolex GMT MASTER II PEPSI JUBILEE`,
+                        label: `⌚︎ '18 Rolex GMT Master II Pepsi`,
                         borderColor: 'rgba(100, 0, 0, 0.65)',
                         backgroundColor: 'rgba(100, 0, 0, 0.65)',
                         fill: false,
@@ -156,12 +171,25 @@ const TestChart = ({}) => {
                         // pointHoverBackgroundColor: 'rgba(250,0,0,0.6)'
 
                     },
+                    // {
+                    //     // Harry Potter and the Philosophers Stone 1st Ed.
+                    //     data: ytdDataHarryPotter.map((data) => ((data.highPriceUSD - ytdStartingPriceHarryPotter) / ytdStartingPriceHarryPotter * 100).toFixed(1)),
+                    //     label: `📘 Harry Potter and the Philosophers Stone 1st Ed.`,
+                    //     borderColor: 'rgba(0, 100, 100, 0.65)',
+                    //     backgroundColor: 'rgba(0, 100, 100, 0.65)',
+                    //     fill: false,
+                    //     borderWidth: 5,
+                    //     spanGaps: true,
+                    //     lineTension: 0,
+                    //     // pointHoverBackgroundColor: 'rgba(250,0,0,0.6)'
+
+                    // },
                     {
-                        // Harry Potter and the Philosophers Stone 1st Ed.
-                        data: ytdDataHarryPotter.map((data) => ((data.highPriceUSD - ytdStartingPriceHarryPotter) / ytdStartingPriceHarryPotter * 100).toFixed(1)),
-                        label: `Harry Potter and the Philosophers Stone 1st Ed.`,
-                        borderColor: 'rgba(0, 100, 100, 0.65)',
-                        backgroundColor: 'rgba(0, 100, 100, 0.65)',
+                        // '88 MICHAEL JORDAN GAME-WORN SNEAKERS
+                        data: ytdData88Jordan3.map((data) => ((data.highPriceUSD - ytdStartingPrice88Jordan3) / ytdStartingPrice88Jordan3 * 100).toFixed(1)),
+                        label: `👟 '88 Michael Jordan Game-Worn Sneakers`,
+                        borderColor: 'rgba(200, 0, 0, 0.65)',
+                        backgroundColor: 'rgba(200, 0, 0, 0.65)',
                         fill: false,
                         borderWidth: 5,
                         spanGaps: true,
@@ -169,10 +197,11 @@ const TestChart = ({}) => {
                         // pointHoverBackgroundColor: 'rgba(250,0,0,0.6)'
 
                     },
+                    
                     {
                         // Zillow US Home Value Index
                         data: ytdDataZillowUSHousingIndex.map((data) => ((data.highPriceUSD - ytdStartingPriceZillowUSHousingIndex) / ytdStartingPriceZillowUSHousingIndex * 100).toFixed(1)),
-                        label: `Zillow US Home Value Index`,
+                        label: `🏠 Zillow US Home Value Index`,
                         borderColor: 'rgba(210, 36, 233, 0.65)',
                         backgroundColor: 'rgba(100, 100, 100, 0.65)',
                         fill: false,
@@ -185,7 +214,11 @@ const TestChart = ({}) => {
                     ],
                 }}
                 options={{
-                    title: { display: true, text: `click a box to add/remove that item` },
+                    // How to make the Chart Responsive: Do this and do CSS media querys for height!                    
+                    responsive: true,
+                    maintainAspectRatio: false,
+
+                    title: { display: true, text: `click a box to add/remove an item` },
                     legend: {
                         labels: {
                             boxWidth: 30,
@@ -239,7 +272,8 @@ const TestChart = ({}) => {
                             {
                                 scaleLabel: {
                                     display: true,
-                                    labelString: "* Using the high price for each Month"
+                                    labelString: "* Data points for Rally assets represent the price at a liquidity event. All data points use the monthly highs to calculate ROI%",
+
                                 }
                             }
                         ]
