@@ -156,7 +156,7 @@ function findAvgReturn(array) {
     }
     return (sumReturn / count).toFixed(2)
 }
-console.log("AVG RETURN: ", findAvgReturn(rows))
+///console.log("AVG RETURN: ", findAvgReturn(rows))
 
 // Shuffle the rows element
 function shuffleArray(array) {

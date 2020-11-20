@@ -10,7 +10,7 @@ const TestChart = ({}) => {
         { name: `'06 Ferrari F430`, ticker: "#06FS1", category: "🏎", ipoDate: "11-01-2020", ipoSharePrice: 12.00, ipoValue: 199000, latestValue: 231000, latestSharePrice: 25.00 },
     ]
 
-    console.log("HELLO: ", test.map((obj) => (obj.latestSharePrice - obj.ipoSharePrice)/obj.ipoSharePrice));
+    ////console.log("HELLO: ", test.map((obj) => (obj.latestSharePrice - obj.ipoSharePrice)/obj.ipoSharePrice));
 
     const ytdMonths = [
         "Nov 2019","Dec 2019", "Jan 2020", "Feb 2020", "Mar 2020",

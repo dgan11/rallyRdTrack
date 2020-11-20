@@ -16,14 +16,14 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate }, country }) =
         <CardComponent
           className={styles.infected}
           cardTitle="Assets"
-          value={149}
+          value={150}
           cardSubtitle="Traded and Secured on Rally"
           prefix=""
           suffix=""
           decimals={0}
           value2=""
           prefix2=""
-          suffix2="Last IPO: #85JORDAN (Nov 11, 2020)"
+          suffix2="Last IPO: #JUSTICE1 (Nov 20, 2020)"
         />
         <CardComponent
           className={styles.recovered}
