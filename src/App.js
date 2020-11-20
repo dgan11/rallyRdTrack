@@ -41,10 +41,11 @@ class App extends React.Component {
         <h2 id="compare-assets">Year-to-Date Comparison of Asset Classes</h2>
         {/* <Chart data={data} country={country}/> */}
         <TestChart />
+        <p id="chart-qualifier">*Data points for Rally assets represent the price at a liquidity event. All data points use the monthly highs to calculate ROI%.</p> 
 
         <h2 id="historic-data">Historic Data</h2>
         <EnhancedTable />
-        <p id="tableQualifier">*Only showing offerings with atleast one trading window</p>
+        <p id="table-qualifier">*Only showing offerings with atleast one trading window</p>
 
       </div>
     )

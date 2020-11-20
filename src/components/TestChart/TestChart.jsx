@@ -268,15 +268,15 @@ const TestChart = ({}) => {
                                 }
                             }
                         ],
-                        xAxes: [
-                            {
-                                scaleLabel: {
-                                    display: true,
-                                    labelString: "* Data points for Rally assets represent the price at a liquidity event. All data points use the monthly highs to calculate ROI%.",
+                        // xAxes: [
+                        //     {
+                        //         scaleLabel: {
+                        //             display: true,
+                        //             labelString: "* Data points for Rally assets represent the price at a liquidity event. All data points use the monthly highs to calculate ROI%.",
 
-                                }
-                            }
-                        ]
+                        //         }
+                        //     }
+                        // ]
                     },
                 }}
             />
