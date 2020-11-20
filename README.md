@@ -8,6 +8,6 @@
 
 
 ## Introduction
-This is a Web App to Track Investments on Rally and Visualize the Data
+This is a Web App to Track Investments on Rally and Visualize the Data.
 
 Written By: David Gan
