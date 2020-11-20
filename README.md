@@ -2,12 +2,11 @@
 
 ### [Rally](https://rallyrd.com/)
 
-![COVID-19 Tracker](https://i.ibb.co/X87BqVY/Screenshot-2020-04-13-at-10-14-58.png)
+## What it looks Like
+![img1](https://github.com/dgan11/rallyRdTrack/tree/master/src/images/readmePic1.png)
+![img2](https://github.com/dgan11/rallyRdTrack/tree/master/src/images/readmePic2.png)
 
 ## Introduction
 This is a Web App to Track Investments on Rally and Visualize the Data
 
 Written By: David Gan
-
-Setup:
-- run ```npm i && npm start```
