@@ -136,7 +136,7 @@ const TestChart = ({}) => {
                         // S&P 500
                         // map to find the ROI% for each month
                         data: ytdDataSPY.map((data) => ((data.highPriceUSD - ytdStartingPriceSPY) / ytdStartingPriceSPY * 100).toFixed(1)),
-                        label: '📊 S&P 500 ETF (SPDR)',
+                        label: '📊 S&P 500 ETF (SPY)',
                         borderColor: 'rgba(0, 0, 250, 0.65)',
                         backgroundColor: 'rgba(0, 0, 250, 0.65)',
                         fill: false,

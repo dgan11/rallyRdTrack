@@ -307,7 +307,10 @@ export default function EnhancedTable() {
                                             </TableCell>
                                             <TableCell align="left">{row.category}</TableCell>
                                             <TableCell align="left">{row.ticker}</TableCell>
-                                            <TableCell align="right" >{row.ipodate.toLocaleDateString(undefined, { month: "numeric", year: "numeric" })}</TableCell>
+                                            {/* <TableCell align="right" >{row.ipodate.toLocaleDateString(undefined, { month: "numeric", year: "numeric" })}</TableCell> */}
+                                            <TableCell align="right" >{row.ipodate.toLocaleDateString("en-US", { month: "numeric", year: "numeric" })}</TableCell>
+                                            {/* <TableCell align="right" >{row.ipodate.toLocaleDateString()}</TableCell> */}
+                                            {/* <TableCell align="right" >{row.ipodate}</TableCell> */}
                                             <TableCell align="right">${row.ipoprice.toFixed(2)}</TableCell>
                                             <TableCell align="right">${row.curprice.toFixed(2)}</TableCell>
                                             <TableCell align="right">{row.roi.toFixed(2)}%</TableCell>
