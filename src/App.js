@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { Cards} from './components';
 import { fetchData } from './api/';
 import styles from './App.module.css';
 import EnhancedTable from "./components/EnhancedTable/EnhancedTable";
 import TestChart from "./components/TestChart/TestChart";
+import ReactGa from 'react-ga';
+
+ReactGa.initialize('G-KH818NJHMR');
+// report page view
+ReactGa.pageview('/');
 
 class App extends React.Component {
 
@@ -28,6 +33,7 @@ class App extends React.Component {
     ////console.log("data for selected country: ", fetchedData);
     this.setState({data: fetchedData, country:country})
   }
+  
 
   render() {
     // destructure this.state.data

@@ -148,7 +148,7 @@ const TestChart = ({}) => {
                     {
                         // Pokemon 1st Ed Pokemon Set
                         data: ytdDataPokemon.map((data) => ((data.highPriceUSD - ytdStartingPricePokemon) / ytdStartingPricePokemon * 100).toFixed(1)),
-                        label: '🐱 PSA 10 1st Ed. Pokemon Set',
+                        label: '🐱 PSA 10 1st Ed. Pokémon Set',
                         borderColor: 'rgba(0, 250, 0, 0.65)',
                         backgroundColor: 'rgba(0, 250, 0, 0.65)',
                         fill: false,
