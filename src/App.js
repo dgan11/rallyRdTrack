@@ -34,8 +34,7 @@ class App extends React.Component {
   render() {
     // destructure this.state.data
     const { data, country } = this.state;
-    //console.log("data Sent to Charts: ", data);
-    this.componentDidMount()
+
     return (
       <div className={styles.container}>
         <h1 id="top">Rally Rd Track 🏁</h1>
