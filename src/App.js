@@ -5,11 +5,7 @@ import { fetchData } from './api/';
 import styles from './App.module.css';
 import EnhancedTable from "./components/EnhancedTable/EnhancedTable";
 import TestChart from "./components/TestChart/TestChart";
-import ReactGa from 'react-ga';
 
-ReactGa.initialize('G-KH818NJHMR');
-// report page view
-ReactGa.pageview('/');
 
 class App extends React.Component {
 
@@ -39,6 +35,7 @@ class App extends React.Component {
     // destructure this.state.data
     const { data, country } = this.state;
     //console.log("data Sent to Charts: ", data);
+    this.componentDidMount()
     return (
       <div className={styles.container}>
         <h1 id="top">Rally Rd Track 🏁</h1>
