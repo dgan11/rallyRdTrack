@@ -16,7 +16,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate }, country }) =
         <CardComponent
           className={styles.infected}
           cardTitle="Assets"
-          value={153}
+          value={154}
           cardSubtitle="Traded and Secured on Rally"
           prefix=""
           suffix=""
@@ -28,28 +28,28 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate }, country }) =
         <CardComponent
           className={styles.recovered}
           cardTitle="Market Value"
-          value={17100475+27500+4650+26000+180000}
+          value={17100475+27500+4650+26000+180000+385200}
           lastUpdate={lastUpdate}
           cardSubtitle="Total Market Capitalization of Owned Assets"
           prefix="$"
           suffix=""
           decimals={0}
-          value2={4650+26000+180000}
+          value2={385200}
           prefix2="+$"
-          suffix2=" in the last 7 days"
+          suffix2=" in the last trading window (Dec 1, 2020)"
         />
         <CardComponent
           className={styles.deaths}
           cardTitle="Returns"
-          value={25.75}
+          value={26}
           lastUpdate={lastUpdate}
           cardSubtitle="Average ROI on assets with atleast one trading window"
           prefix=""
           suffix="%"
-          decimals={1}
-          value2={354}
+          decimals={0}
+          value2={500}
           prefix2="Largest Return on IPO: +"
-          suffix2="% ('88 Michael Jordan Game Worn Sneakers)"
+          suffix2="% ('99 Pokémon 1st Ed. Complete Set)"
         />
       </Grid>
     </div>

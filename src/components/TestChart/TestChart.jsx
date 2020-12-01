@@ -51,8 +51,23 @@ const TestChart = ({}) => {
         { i: 9, highPriceUSD: NaN }, //Aug
         { i: 10, highPriceUSD: NaN }, //Sep
         { i: 11, highPriceUSD: 50 }, // Oct
-        { i: 12, highPriceUSD: 80.16 }] //Nov
+        { i: 12, highPriceUSD: 150 }] //Nov
     const ytdStartingPricePokemon = 25;
+    // const ytdDataPokemon = [
+    //     { i: 0, highPriceUSD: NaN }, //Nov
+    //     { i: 1, highPriceUSD: NaN }, //Dec
+    //     { i: 2, highPriceUSD: NaN }, //Jan
+    //     { i: 3, highPriceUSD: NaN }, //Feb
+    //     { i: 4, highPriceUSD: NaN }, //March
+    //     { i: 5, highPriceUSD: NaN }, //Apr
+    //     { i: 6, highPriceUSD: NaN }, //May
+    //     { i: 7, highPriceUSD: 25 }, //June
+    //     { i: 8, highPriceUSD: NaN }, //July
+    //     { i: 9, highPriceUSD: NaN }, //Aug
+    //     { i: 10, highPriceUSD: NaN }, //Sep
+    //     { i: 11, highPriceUSD: 50 }, // Oct
+    //     { i: 12, highPriceUSD: 80.16 }] //Nov
+    // const ytdStartingPricePokemon = 25;
 
     ////console.log("WORK: ", ytdDataPokemon.map((data) => ((data.highPriceUSD - ytdStartingPricePokemon) / ytdStartingPricePokemon * 100).toFixed(1)))
     //console.log("WORK", NaN-10);

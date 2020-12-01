@@ -56,16 +56,16 @@ export function createRowData(name, category, ticker, ipodate, ipoprice, curpric
     return { name, category, ticker, ipodate, ipoprice, curprice, roi };
 }
 
-export const testing = [
-    createRowData(`'86 Mac Plus (Signed)`, '📋 ', '#JOBSMAC', new Date("11-01-2020"), 10.00, 10.00, 0),
-    createRowData(`'99 Pokemone 1st Ed. Complete Set`, '📋 ', '#POKEMON1', new Date("06-01-2020"), 25.00, 95.00, 280),
-    createRowData(`'77 Lotus ESPRIT S1`, '🏎 ', '#77LE1', new Date("06-01-2020"), 38.85, 65.95, 69.76),
-    createRowData(`'90 Ford Mustang 7UP Ed.`, '🏎 ', '#90FM1', new Date("07-01-2018"), 8.25, 22.60, 173.94),
-    createRowData(`'18 Rolex GMT Master II Pepsi Jubilee`, '⌚️', '#RLEXPEPSI', new Date("11-01-2019"), 8.90, 13.50, 51.69),
-    createRowData(`Hermès 30cm Himalaya Birkin`, '👜', '#HIMALAYA', new Date("05-01-2020"), 70.90, 75.00, 7.14),
-    createRowData(`Harry Potter and The Philosopher's Stone`, '📘', '#POTTER', new Date("11-01-2019"), 24.00, 45.00, 87.50),
-    createRowData(`'16 Chateau Petrus`, '🍷', '#16PETRUS', new Date("09-01-2020"), 5.00, 5.00, 0),
-];
+// export const testing = [
+//     createRowData(`'86 Mac Plus (Signed)`, '📋 ', '#JOBSMAC', new Date("11-01-2020"), 10.00, 10.00, 0),
+//     createRowData(`'99 Pokemone 1st Ed. Complete Set`, '📋 ', '#POKEMON1', new Date("06-01-2020"), 25.00, 95.00, 280),
+//     createRowData(`'77 Lotus ESPRIT S1`, '🏎 ', '#77LE1', new Date("06-01-2020"), 38.85, 65.95, 69.76),
+//     createRowData(`'90 Ford Mustang 7UP Ed.`, '🏎 ', '#90FM1', new Date("07-01-2018"), 8.25, 22.60, 173.94),
+//     createRowData(`'18 Rolex GMT Master II Pepsi Jubilee`, '⌚️', '#RLEXPEPSI', new Date("11-01-2019"), 8.90, 13.50, 51.69),
+//     createRowData(`Hermès 30cm Himalaya Birkin`, '👜', '#HIMALAYA', new Date("05-01-2020"), 70.90, 75.00, 7.14),
+//     createRowData(`Harry Potter and The Philosopher's Stone`, '📘', '#POTTER', new Date("11-01-2019"), 24.00, 45.00, 87.50),
+//     createRowData(`'16 Chateau Petrus`, '🍷', '#16PETRUS', new Date("09-01-2020"), 5.00, 5.00, 0),
+// ];
 
 export const rows = [
     // CARS
@@ -126,7 +126,7 @@ export const rows = [
     createRowData(`1910 TY COBB E98 CARD`, '📋 ', '#10COBB', new Date(2019, 11), 39, 65, 66.67),
     createRowData(`ZION WILLIAMSON GAME-WORN SNEAKERS`, '📋 ', '#18ZION', new Date(2020, 3), 30, 57, 90),
     createRowData(`'71 WILLIE MAYS SF GIANTS JERSEY`, '📋 ', '#71MAYS', new Date(2019, 9), 28.50, 41, 43.86),
-    createRowData(`'99 POKEMON 1ST EDITION COMPLETE SET`, '📋 ', '#POKEMON1', new Date(2020, 6), 25.00, 80.16, 220.64),
+    createRowData(`'99 POKEMON 1ST EDITION COMPLETE SET`, '📋 ', '#POKEMON1', new Date(2020, 6), 25.00, 150, 500),
     createRowData(`'56 GAME-WORN TED WILLIAMS JERSEY`, '📋 ', '#56TEDWILL', new Date(2020, 7), 45, 45.05, 0.11),
     createRowData(`'68 WILLIE MAYS GAME-USED BAT (SIGNED)`, '📋 ', '#68MAYS', new Date(2020, 7), 19.5, 24.5, 25.64),
     createRowData(`HONUS WAGNER "T206" CARD`, '📋 ', '#HONUS', new Date(2019, 12), 52, 75, 44.23),
