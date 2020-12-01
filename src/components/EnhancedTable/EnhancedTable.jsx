@@ -45,7 +45,8 @@ function findAvgReturn(array) {
     }
     return (sumReturn / count).toFixed(2)
 }
-///console.log("AVG RETURN: ", findAvgReturn(rows))
+// Find the AVG RETURN
+console.log("AVG RETURN: ", findAvgReturn(rows))
 
 // Shuffle the rows element
 function shuffleArray(array) {
@@ -58,7 +59,8 @@ function shuffleArray(array) {
     }
     return array;
 }
-//shuffleArray(rows);
+// Randomize how the rows appear in the table
+shuffleArray(rows);
 
 
 function descendingComparator(a, b, orderBy) {

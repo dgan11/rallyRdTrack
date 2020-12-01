@@ -23,7 +23,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate }, country }) =
           decimals={0}
           value2=""
           prefix2=""
-          suffix2="Last IPO Fully Funded: #MOONSHOE (Nov 28, 2020)"
+          suffix2="Last IPO Fully Funded: #03LEBRON2 (Nov 30, 2020)"
         />
         <CardComponent
           className={styles.recovered}
@@ -41,7 +41,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate }, country }) =
         <CardComponent
           className={styles.deaths}
           cardTitle="Returns"
-          value={26}
+          value={29}
           lastUpdate={lastUpdate}
           cardSubtitle="Average ROI on assets with atleast one trading window"
           prefix=""
