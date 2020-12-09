@@ -117,7 +117,7 @@ const TestChart = ({}) => {
         { i: 9, highPriceUSD: NaN }, //Aug
         { i: 10, highPriceUSD: 49.95 }, //Sep
         { i: 11, highPriceUSD: NaN }, // Oct
-        { i: 12, highPriceUSD: NaN }] //Nov
+        { i: 12, highPriceUSD: 51 }] //Nov
     const ytdStartingPrice88Jordan3 = 11;
 
     const ytdDataZillowUSHousingIndex = [

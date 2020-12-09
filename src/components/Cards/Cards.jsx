@@ -16,32 +16,32 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate }, country }) =
         <CardComponent
           className={styles.infected}
           cardTitle="Assets"
-          value={154}
+          value={158}
           cardSubtitle="Traded and Secured on Rally"
           prefix=""
           suffix=""
           decimals={0}
           value2=""
           prefix2=""
-          suffix2="Last IPO Fully Funded: #03LEBRON2 (Nov 30, 2020)"
+          suffix2="Last IPO Fully Funded: #06BRM (Dec 8, 2020)"
         />
         <CardComponent
           className={styles.recovered}
           cardTitle="Market Value"
-          value={17100475+27500+4650+26000+180000+385200}
+          value={17100475+27500+4650+26000+180000+385200+170000+35000+25000-41760+19700+18500}
           lastUpdate={lastUpdate}
           cardSubtitle="Total Market Capitalization of Owned Assets"
           prefix="$"
           suffix=""
           decimals={0}
-          value2={385200}
-          prefix2="+$"
-          suffix2=" in the last trading window (Dec 1, 2020)"
+          value2={22060}
+          prefix2="-$"
+          suffix2=" in the last trading window (Dec 8, 2020)"
         />
         <CardComponent
           className={styles.deaths}
           cardTitle="Returns"
-          value={29}
+          value={28}
           lastUpdate={lastUpdate}
           cardSubtitle="Average ROI on assets with atleast one trading window"
           prefix=""
