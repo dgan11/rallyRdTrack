@@ -75,7 +75,7 @@ export const rows = [
     createRowData(`'88 BMW M3`, '🏎 ', '#88BM1', new Date(2019, 1), 47, 50, 6.38),
     createRowData(`'83 FERRARI 512 BBI`, '🏎 ', '#83FB1', new Date(2018, 7), 70, 57.5, -17.86),
     createRowData(`'92 LANCIA DELTA MARTINI 5`, '🏎 ', '#92LD1', new Date(2018, 12), 55, 60, 9.09),
-    createRowData(`'65 ALFA ROMEO GIULIA SS`, '🏎 ', '#65AG1', new Date(2019, 4), 89.25, 103.60, 16.08),
+    createRowData(`'65 ALFA ROMEO GIULIA SS`, '🏎 ', '#65AG1', new Date(2019, 4), 89.25, 103, 15.4),
     createRowData(`'55 PORSCHE 356 SPEEDSTER`, '🏎 ', '#55PS1', new Date(2018, 3), 212.50, 250.00, 17.65),
     createRowData(`'72 MAZDA COSMO SPORT`, '🏎 ', '#72MC1', new Date(2018, 12), 62.25, 50, -19.68),
     createRowData(`'02 ACURA NSX-T`, '🏎 ', '#02AX1', new Date(2018, 11), 54, 49, -9.26),
@@ -118,7 +118,7 @@ export const rows = [
     createRowData(`'88 MICHAEL JORDAN GAME-WORN SNEAKERS`, '📋 ', '#88JORDAN', new Date(2020, 1), 11.00, 49.95, 354.09),
     createRowData(`'75 ALI FIGHT-WORN BOOTS`, '📋 ', '#75ALI', new Date(2019, 12), 46, 52, 10.4),
     createRowData(`'24 BABE RUTH AL BATTING TITLE BAT`, '📋 ', '#24RUTHBAT', new Date(2020, 4), 85, 110, 29.41),
-    createRowData(`BABE RUTH SINGLE SIGNED BASEBALL`, '📋 ', '#RUTHBALL1', new Date(2020, 5), 14.5, 16.7, 15.17),
+    createRowData(`BABE RUTH SINGLE SIGNED BASEBALL`, '📋 ', '#RUTHBALL1', new Date(2020, 5), 14.5, 17, 17.24),
     createRowData(`'38 GOUDEY JOE DIMAGGIO "HEADS-UP" CARD`, '📋 ', '#DIMAGGIO', new Date(2020, 5), 22, 28, 27.27),
     createRowData(`'55 ROBERTO CLEMENTE ROOKIE CARD`, '📋 ', '#CLEMENTE', new Date(2020, 5), 38, 39, 2.63),
     createRowData(`'33 GOUDEY #144 BABE RUTH CARD`, '📋 ', '#33RUTH', new Date(2020, 2), 38.5, 50, 9.77),
@@ -132,12 +132,14 @@ export const rows = [
     createRowData(`HONUS WAGNER "T206" CARD`, '📋 ', '#HONUS', new Date(2019, 12), 52, 75, 44.23),
     createRowData(`'03 UD EXQUISITE COLLECTION MICHAEL JORDAN CARD`, '📋 ', '#03JORDAN', new Date(2020, 8), 20.50, 28.75, 40.24),
     createRowData(`'51 BOWMAN MICKEY MANTLE ROOKIE CARD`, '📋 ', '#51MANTLE', new Date(2020, 7), 17, 18.5, 8.82),
+    createRowData(`'85 NES SUPER MARIO BROS`, '📋 ', '#85MARIO', new Date(2020, 8), 50, 69.95, 39.9),
+    createRowData(`'86 TOPPS JERRY RICE ROOKIE CARD`, '📋 ', '#86RICE', new Date(2020, 7), 1, 1.15, 15),
 
     //WATCHES + LUXURY
     createRowData(`'70 ROLEX 5100 BETA 21 “THE TEXAN”`, '⌚️', '#70RLEX', new Date(2019, 11), 20, 30, 50),
     createRowData(`OMEGA SPEEDMASTER "SILVER SNOOPY"`, '⌚️', '#SNOOPY', new Date(2020, 4), 12.75, 17.95, 40.78),
     createRowData(`HERMÈS 35CM BORDEAUX CROCODILE BIRKIN`, '👜', '#BIRKINBOR', new Date(2020, 1), 26.25, 27.05, 3.05),
-    createRowData(`HERMÈS 30CM HIMALAYA BIRKIN`, '👜', '#HIMALAYA', new Date(2020, 2), 26.25, 27.05, 3.05),
+    createRowData(`HERMÈS 30CM HIMALAYA BIRKIN`, '👜', '#HIMALAYA', new Date(2020, 2), 70, 50, -28.6),
     createRowData(`AUDEMARS PIGUET ROYAL OAK A-SERIES "JUMBO"`, '⌚️', '#APROAK', new Date(2019, 12), 75, 70.25, -5.07),
     createRowData(`HERMÈS 30CM TANGERINE OSTRICH BIRKIN`, '👜', '#BIRKINTAN', new Date(2020, 6), 28, 28, 0),
     createRowData(`'85 ROLEX GMT-MASTER "NIPPLE DIAL"`, '⌚️', '#GMTBLACK1', new Date(2020, 6), 28, 28, 0),
@@ -149,7 +151,7 @@ export const rows = [
     createRowData(`ALBERT EINSTEIN: PHILOSOPHER-SCIENTIST (SIGNED, 1ST ED.)`, '📘', '#EINSTEIN', new Date(2019, 12), 7.25, 13.60, 87.58),
     createRowData(`YOKO ONO: GRAPEFRUIT (SIGNED, 1ST ED.)`, '📘', '#YOKO', new Date(2020, 5), 80.00, 81.20, 1.50),
     createRowData(`'62 MARVEL INCREDIBLE HULK #1`, '📘', '#HULK1', new Date(2020, 5), 44.50, 45.60, 2.47),
-    createRowData(`THEODORE ROOSEVELT: AFRICAN GAME TRAILS (SIGNED, 1ST ED.)`, '📘', '#ROOSEVELT', new Date(2019, 11), 19.50, 26.50, 35.90),
+    createRowData(`THEODORE ROOSEVELT: AFRICAN GAME TRAILS (SIGNED, 1ST ED.)`, '📘', '#ROOSEVELT', new Date(2019, 11), 19.50, 29.50, 37.70),
     createRowData(`'63 MARVEL AMAZING SPIDER-MAN #1`, '📘', '#SPIDER1', new Date(2019, 11), 22.00, 28.30, 28.64),
     createRowData(`'40 DC COMICS BATMAN #3`, '📘', '#BATMAN3', new Date(2020, 2), 78.00, 82.25, 5.45),
     createRowData(`JAMES JOYCE: ULYSSES (MATISSE SIGNED)`, '📘', '#ULYSSES', new Date(2020, 3), 51.00, 61.00, 19.61),
@@ -168,6 +170,7 @@ export const rows = [
     createRowData(`SHAKESPEARE: COMEDIES, HISTORIES, & TRAGEDIES`, '📘', '#SHKSPR4', new Date(2020, 7), 115, 200, 0),
     createRowData(`'41 TIMELY COMICS CAPTAIN AMERICA COMICS #3`, '📘', '#CAPTAIN3', new Date(2020, 7), 37, 42, 13.51),
     createRowData(`CHURCHILL: THE SECOND WORLD WAR (SIGNED, 1ST ED.)`, '📘', '#CHURCHILL', new Date(2020, 7), 1, 1.80, 80),
+    createRowData(`'63 MARVEL TALES OF SUSPENSE #39'`, '📘', '#TOS39', new Date(2020, 8), 45, 55, 22.22),
 
     //WINE + WHISKEY
     //createRowData(`'13 DOMAINE LEROY VOSNE-ROMANEE LES BEAUX MONTS (12)`, '🍷', '#13BEAUX', new Date("11-01-2020"), 5.00, 5.00, 0),
@@ -175,6 +178,7 @@ export const rows = [
     createRowData(`'16 SCREAMING EAGLE (12)`, '🍷', '#16SCREAG', new Date(2020, 9), 39.00, 39.00, 0),
     createRowData(`'05 CHATEAU LATOUR (12)`, '🍷', '#05LATOUR', new Date(2020, 9), 9.80, 9.80, 0),
     createRowData(`'16 CHATEAU PETRUS`, '🍷', '#16PETRUS', new Date(2020, 8), 5.00, 5.00, 0),
+    createRowData(`'16 SCREAMING EAGLE (12)`, '🍷', '#16SCREAG', new Date(2020, 9), 39, 39, 0),
 ];
 
 
